@@ -1,13 +1,21 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
+section {
+  margin: 20px 0px;
+}
+
 .btn {
+  width: 100px;
   border-radius: 10px;
-  border: 2px solid black;
   background-color: aqua;
-  text-align: center;
   padding: 10px;
-  display: inline-block;
+  border: 2px solid black;
+  color: black;
   cursor: pointer;
 }
+

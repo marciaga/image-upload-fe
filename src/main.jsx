@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import App from "./App.jsx";
+import ImageScreen from "./ImageScreen.jsx";
 import "./index.css";
-import App from "./App";
-import ImageScreen from "./Image";
 
 const routes = [
   {
@@ -13,14 +12,13 @@ const routes = [
   },
   {
     element: <ImageScreen />,
-    path: "/images",
-  },
+    path: '/images',
+  }
 ];
 
 const router = createBrowserRouter(routes);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
